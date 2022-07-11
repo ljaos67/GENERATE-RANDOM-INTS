@@ -30,9 +30,3 @@ To sort the contents of a vector, use the `sort()` function in the STL. In addit
 - Include all system header files (that you need in your program) in your header file. For example, to gain access to the `iostream` library, which defines a set of simple I/O operations, insert the line `#include <iostream>` in your header file, to gain access the I/O manipulators such as `setw`, insert the line `#include <iomanip>` in your header file; to access the vector container in the STL, insert the line `#include <vector>` in your header file; and to use the functions in the STL such as sort, insert the line `#include <algorithm>` in your header file. At the top of `rgi.cc`, we have inserted your header file `#include “rgi.h”`.
  
 * You are not allowed to use any I/O functions from the C library, such as `scanf` or `printf`. Instead, use the I/O functions from the C++ library, such as `cin` or `cout`.
-
-* Add documentation to your source file (e.g. https://google.github.io/styleguide/cppguide.html#Comments, http://faculty.cs.niu.edu/~mcmahon/CS241/241DocStandards.html), you can use what ever approach you want as long as it is consistent and complete.
-
-* We have included a `Makefile` for your reference, in future assignments you will need to build your own. To compile your code just type `make` in the project directory. To test your program, execute `./rgi.exe &> rgi.out`, which will put the output (including any error messages) in file `rgi.out`. You can find the correct output of this program in file `rgi.refout`, you can compare the two files by using `diff` on turing or hopper, `diff rgi.out rgi.refout`, if the files are the same there will be no output from `diff`.
-
-When your program is ready for grading, ***commit*** and ***push*** your local repository to remote git classroom repository and follow the _**Assignment Submission Instructions**_.
